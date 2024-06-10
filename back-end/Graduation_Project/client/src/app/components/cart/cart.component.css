@@ -1,0 +1,43 @@
+.top{
+  margin-bottom: 100px;
+}
+.item-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around; /* Adds some space around each item card */
+}
+
+.item-card {
+  /* other styles... */
+}
+
+/* Other CSS classes... */
+/* 00000000000000000000000000000000000000000 */
+
+
+
+.card-img-top{
+  width: 50%;
+}
+
+.item-button {
+  margin: 5px;
+  border-radius: 30px;
+}
+
+/* other styles... */
+.item-price {
+  font-weight: bold;  /* Make the text bold */
+  /* text-align: center; Center the text */
+  /* You can add other styles like font-size, color, and so on... */
+}
+
+.btn{
+  background-color: #628730;
+  border-radius: 40px;
+  color: #fff;
+}
+.btn:hover{
+  background-color:#1D1F20;
+}

@@ -1,0 +1,27 @@
+.top{
+  margin-bottom: 100px;
+}
+img{
+  width: 270px;
+  height: 350px;
+}
+
+.btn-custom {
+  border-radius: 40px;
+  background-color: #628730;
+  color: white;
+}
+
+.btn-custom:hover {
+  background-color: #0D1315;
+}
+
+
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 33.33%;
+  padding: 5px;
+}

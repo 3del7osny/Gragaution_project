@@ -1,0 +1,116 @@
+<div class="top"></div>
+
+
+<div class="container"><form class="mt-5">
+  <div class="form-group row">
+    <div class="col-lg-6">
+        <input type="text" [(ngModel)]="searchTerm" name="search" class="form-control" id="searchInput" placeholder="Enter tennis player's name">
+    </div>
+    <div class="col-md-3">
+        <button class="btn btn-primary" (click)="searchPlayer()">Search</button>
+    </div>
+  </div>
+</form>
+</div>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12 my-4 d-flex align-items-center" *ngFor="let player of players">
+      <div class="col-lg-4">
+        <img [src]="player.image" alt="{{ player.name }}" class="img-fluid rounded w-80 h-80">
+      </div>
+      <div class="col-lg-8">
+        <h2 class="fw-bold">{{ player.name }}</h2>
+        <p class="lead">{{ player.description }}</p>
+        <!-- <button class="btn btn-custom" [routerLink]="['/videos']" fragment="{{ player.name }}">Show Videos</button> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container mt-3"  >
+  <h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">The Basic Of Tennis</h2>
+  <div class="row">
+    <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/1P_Das6OjAk?si=j3GqmWFCL331poQA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/jrhM3k84YJU?si=n62ZxwJBTe6aVHpb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+    <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/YqgcykDGB2A?si=gQiMOGhqcA_jwAyW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>    </div>
+  </div>
+  </div>
+
+
+<div class="container mt-3" >
+<h1 style="color: #4bdd41; font-size: 50px; font-weight:bold; text-align: center;">Top Tennis Player</h1>
+    <h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Novak Djokovic</h2>
+    <div class="row">
+  <div class="column">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/4iTiRvk4FHY?si=Au_8RJcHaxXYQIKH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="column">
+  <iframe width="100%" height="315" src="https://www.youtube.com/embed/4Nk_whncZ20?si=qujx3G53tpfYXkPx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/hj1ILHOP-bU?si=wevvs-_Tet77tzq0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+</div>
+</div>
+
+<div class="container mt-3" >
+<h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Rafael Nadal</h2>
+<div class="row">
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/9X6ulqsNRhI?si=bbpUlB4sOKM8XyDR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/v27M_RgrLzU?si=PZunx4bhkI9MIlKJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/gkIsvlZDG-Y?si=EkUpzOUdecv9I9FD" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+</div>
+</div>
+<div class="container mt-3" >
+<h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Roger Federer</h2>
+<div class="row">
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/_u_GEqRHxV8?si=VLBURmfQikdp36Hb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/wZnCcqm_g-E?si=R4qCPvyNTthEIPFB" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/9gUvgm23qMU?si=rxa0PBbgr7mUw-HP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+</div>
+</div>
+<div class="container mt-3" >
+<h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Andy Murray</h2>
+<div class="row">
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/CGRzfUccmNE?si=9QKoMnhMwILOWLJ9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/1tvX1B_zEzI?si=6d8prSDb3FFKPg-R" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/lRTOAN8Irbc?si=iBWdDPphIvZO9qem" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+</div>
+</div>
+<div class="container mt-3" >
+<h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Daniil Medvedev</h2>
+<div class="row">
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/2UXNwtvmQX4?si=wRHyakYQoEtAZ2Ua" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/WaXrO6f20lk?si=fYIMxPOvGlbmM1zt" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/c0z6quY8iY8?si=9qlJWST4lS9J2GyR" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+</div>
+</div>
+<div class="container mt-3" >
+<h2 style="color: #BADD41; font-size: 30px; font-weight:bold; text-align: center;">Carlos Alcaraz</h2>
+<div class="row">
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/fTKWoPfkm1M?si=NXqvVMCGPU5AAV4X" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/CsSw4vUYud0?si=IBHF1ZRUKdlFBsiw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+  <div class="column">
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/HDddi-735Iw?si=S2T3PzdYyO-I5gAc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>  </div>
+</div>
+</div>
+
